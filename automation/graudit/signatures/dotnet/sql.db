@@ -1,0 +1,42 @@
+# DotNet SQL
+exec[[:space:]]*sp_executesql
+execute[[:space:]]*sp_executesql
+exec[[:space:]]*sp_.*
+execute[[:space:]]*sp_.*
+exec[[:space:]]*xp_.*
+execute[[:space:]]*sp_.*
+exec[[:space:]]*@
+execute[[:space:]]*@
+executestatement[[:space:]]*\(
+executeSQL[[:space:]]*\(
+#setfilter
+executeQuery[[:space:]]*\(
+GetQueryResultInXML[[:space:]]*\(
+#adodb
+#sqloledb
+#sql[[:space:]]*server
+#driver
+Server\.CreateObject
+#\.Provider
+\.Open([[:space:]]*\(|[[:space:]]+[\"\']).*
+#ADODB.recordset
+New[[:space:]]+*OleDbConnection
+ExecuteReader[[:space:]]*\(
+#DataSource
+SqlCo(mmand|nnection).*\=
+#Microsoft.Jet
+#SqlDataReader
+#ExecuteReader
+#GetString
+#SqlDataAdapter
+#CommandType
+StoredProcedure[[:space:]]*\(
+#System\.Data\.sql
+[Cc]onnection[Ss]tr(ing)?[[:space:]]*\=[[:space:]]*[\'\"].*
+# Stricter matching to avoid javascript spam
+[\'\"][Ss][Ee][Ll][Ee][Cc][Tt][[:space:]]+.*(\{[0-9]+\}|[\'\"][[:space:]]+\+)
+(WHERE|where)[[:space:]]+[^\;]+=.*(\{[0-9]+\}|[\'\"][[:space:]]+\+)
+[\'\" ]+AND[[:space:]]+.*=.*(\{[0-9]+\}|[\'\"][[:space:]]+\+)
+(LIKE|like)[[:space:]]+[^\(\)\;]+(\{[0-9]+\}|[\'\"][[:space:]]+\+)
+(ORDER[[:space:]]+BY|order[[:space:]]+by)[[:space:]]+.*(\{[0-9]+\}|[\'\"][[:space:]]+\+)
+(LIMIT|limit)[[:space:]]+.*(\{[0-9]+\}|[\'\"][[:space:]]+\+)

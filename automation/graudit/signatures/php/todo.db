@@ -1,0 +1,23 @@
+# Otherstuffs
+header[[:space:]]*\(.*\$_(GET|POST|REQUEST|COOKIE).*\)
+eval[[:space:]]*\([[:space:]]*.\$.*[[:space:]]*\)
+file[[:space:]]*\(.\$.*\)
+file_get_contents[[:space:]]*\(.\$.*\)
+fopen[[:space:]]*\(.*\$.*\)
+p?fsockopen[[:space:]]*\(.*\)
+stream_context_create[[:space:]]*\(.*\)
+fwrite
+move_uploaded_file[[:space:]]*\(.*\)
+stream_
+create_function[[:space:]]*\(.*\)
+mail[[:space:]]*\(.\$.*\)
+include[[:space:]]*\(.*\$.*\)
+include_once[[:space:]]*\(.*\$.*\)
+preg_replace[[:space:]]*\(.\$*\)
+preg_match[[:space:]]*\(.*
+readfile[[:space:]]*\(.\$.*\)
+require[[:space:]]*\(.*\$.*\)
+require_once[[:space:]]*\(.*\$.*\)
+# Stefan Esser's research
+unserialize[[:space:]]*\(.*\)
+unserialize_callback_func
