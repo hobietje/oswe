@@ -1,0 +1,5 @@
+Language specific checklists (C, C++)
+Framework specific checklists (React)
+De/serialization specific checklists (Pickle)
+Technology specific checklists (JWT)
+Feature checklists (Auth, Logging, etc)
