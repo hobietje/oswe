@@ -14,6 +14,8 @@ I did not include resources related to learning the basics of various programmin
 
 ## Practice on real-life Open Source
 
+* [ImpressCMS](https://github.com/ImpressCMS/impresscms)
+
 ## Review bug bountry reports
 
 ## Automation for discovery

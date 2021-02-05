@@ -47,3 +47,22 @@ Write "<script>" + sName + "</script>"
 ```
 
 Unfortunately, it is still not perfect as it doesn't consider different types of encoding.  You should be JavaScript-encoding the `sName` here rather than HTML-encoding it.
+
+
+# SQL Injection
+
+Sample vulnerabilities:
+
+* [ImpressCMS: SQL injection when configuring a database](https://hackerone.com/reports/983710)
+
+# LFI
+
+Sample vulnerabilities:
+
+* [ImpressCMS: Fixed possible file system exposing due language cookie](https://github.com/ImpressCMS/impresscms/pull/821/files)
+
+# DoS
+
+Sample vulnerabilities:
+
+* [ImpressCMS: Limit maximum length of password](https://github.com/ImpressCMS/impresscms/pull/836)
