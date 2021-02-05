@@ -38,3 +38,14 @@ A way to annotate what we have reviewed.  Feedback loop for similar patterns to 
 
 ## Discovery
 
+# Other
+
+https://github.com/jmaxxz/jwtbrute
+https://github.com/Sjord/jwtcrack/blob/master/crackjwt.py
+
+Similar to wfuzz:
+* patator
+* FFUF 
+
+Similar to aquatone:
+* https://github.com/sensepost/gowitness

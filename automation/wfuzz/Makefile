@@ -36,4 +36,4 @@ run-adminpanels: build
 				--hc 404 \
 				-c \
 				-z file,/wordlists/general/admin-panels.txt \
-				https://tomorro.com/FUZZ
+				http://hackycorp.com/FUZZ

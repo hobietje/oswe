@@ -1,6 +1,6 @@
-# Wfuzz
+# Aquatone
 
-See [Source](https://github.com/xmendez/wfuzz) & [Documentation](https://wfuzz.readthedocs.io/en/latest/)
+See [Source](https://github.com/michenriksen/aquatone)
 
 # Use Cases
 
@@ -40,5 +40,3 @@ wfencode -e md5 test
 ```
 
 # References
-
-* [https://book.hacktricks.xyz/pentesting-web/web-tool-wfuzz](https://book.hacktricks.xyz/pentesting-web/web-tool-wfuzz)
