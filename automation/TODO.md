@@ -49,3 +49,5 @@ Similar to wfuzz:
 
 Similar to aquatone:
 * https://github.com/sensepost/gowitness
+
+https://github.com/EdOverflow/can-i-take-over-xyz/
