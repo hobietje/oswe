@@ -33,7 +33,7 @@ A beautifully put together set of course materials and related labs for web rela
 
 ## Practice on real-life Open Source
 
-Plenty of OSS out there, but I spent some time trying to find known vulnerabilities in old versions of thse:
+Plenty of OSS out there, but I spent some time trying to find known vulnerabilities in old versions of these:
 
 * [ImpressCMS](https://github.com/ImpressCMS/impresscms)
 

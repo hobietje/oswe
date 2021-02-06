@@ -40,3 +40,11 @@ jwt-brute-kid: build
 			   	-v $(PWD)/data:/workdir/data \
 			   	jwt:latest \
 				brute-hs256-kid.py
+
+# Change payload in HS256 (requires signature key to be brute forced first)
+.PHONY: jwt-update-hs256
+jwt-update-hs256: build
+	docker run  -ti \
+			   	-v $(PWD)/data:/workdir/data \
+			   	jwt:latest \
+				update-hs256.py

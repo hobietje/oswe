@@ -61,6 +61,17 @@ run-mysql: build clean
 			   	john:latest \
 				/workdir/mysql
 				
+# Check a JWT signature with weak signing key
+.PHONY: run-jwt
+run-jwt: build clean
+	docker run  -ti \
+				-v $(PWD)/john.pot:/root/.john/john.pot \
+			   	-v $(PWD)/tests:/workdir \
+			   	john:latest \
+				--wordlist=/workdir/jwt.wordlist \
+				-format=HMAC-SHA256 \
+				/workdir/jwt
+				
 # Show cracked passwords
 .PHONY: run-show
 run-show: build
