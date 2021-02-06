@@ -4,4 +4,8 @@ See [Source](https://github.com/openwall/john) & [Documentation](https://github.
 
 # Use Cases
 
-Crack password files.
+* Unshadow a linux /etc/shadow file
+* Crack passwords:
+    * /etc/passwd hashes
+    * MySQL password .myd file
+    * JWT signature with weak signing key

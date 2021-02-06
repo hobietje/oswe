@@ -40,6 +40,15 @@ jwt-brute-kid: build
 			   	-v $(PWD)/data:/workdir/data \
 			   	jwt:latest \
 				brute-hs256-kid.py
+				
+# Brute force kid header in token (will need customising to suit your target, intercept with a proxy to see results) [alternate example]
+.PHONY: jwt-brute-kid-v2
+jwt-brute-kid-v2: build
+	docker run  -ti \
+			   	-v $(TOP)/wordlists:/wordlists \
+			   	-v $(PWD)/data:/workdir/data \
+			   	jwt:latest \
+				brute-hs256-kid-v2.py
 
 # Change payload in HS256 (requires signature key to be brute forced first)
 .PHONY: jwt-update-hs256
