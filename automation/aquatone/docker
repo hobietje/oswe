@@ -1,1 +1,0 @@
-www.cnn.com run --rm -v /Users/Shared/Data/src/hobietje/oswe/automation/aquatone/targets.txt:/targets.txt -v /Users/Shared/Data/src/hobietje/oswe/automation/aquatone/output:/output aquatone:latest -chrome-path /usr/bin/chromium -out /output -debug -http-timeout 3000 -save-body true -resolution 1440,900 -ports 80,443,8000,8080,8443

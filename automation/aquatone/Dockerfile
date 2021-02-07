@@ -30,4 +30,4 @@ RUN wget https://github.com/michenriksen/aquatone/releases/download/v${VERSION}/
     unzip aquatone_linux_amd64_${VERSION}.zip && \
     cp aquatone /
 
-ENTRYPOINT ["/aquatone"]
+ENTRYPOINT ["/opt/aquatone/aquatone"]
