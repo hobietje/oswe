@@ -48,6 +48,12 @@ Write "<script>" + sName + "</script>"
 
 Unfortunately, it is still not perfect as it doesn't consider different types of encoding.  You should be JavaScript-encoding the `sName` here rather than HTML-encoding it.
 
+# Mime Types
+
+Code may not handle mime types correctly or consistently. 
+
+* Try sending requests using different mime types.  
+* Try requesting responses using different mime types.
 
 # SQL Injection
 
@@ -66,3 +72,4 @@ Sample vulnerabilities:
 Sample vulnerabilities:
 
 * [ImpressCMS: Limit maximum length of password](https://github.com/ImpressCMS/impresscms/pull/836)
+

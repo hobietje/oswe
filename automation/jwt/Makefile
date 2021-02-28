@@ -58,10 +58,10 @@ jwt-update-hs256: build
 			   	jwt:latest \
 				update-hs256.py
 
-# Change signature to PS256 and add a JWK to the JWT header
-.PHONY: jwk-ps256
-jwk-ps256: build
+# Change signature to RS256 and add the 'n' and 'e' for RSA to the JWT header
+.PHONY: jwk-embedded-rs256-rsa
+jwk-embedded-rs256-rsa: build
 	docker run  -ti \
 			   	-v $(PWD)/data:/workdir/data \
 			   	jwt:latest \
-				jwk-ps256.py
+				jwk-embedded-rs256-rsa.py
