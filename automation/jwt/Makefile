@@ -66,10 +66,18 @@ jwk-rs256-rsa: build
 			   	jwt:latest \
 				jwk-rs256-rsa.py
 
-# Change signature to RS256 and add a JKU to a URL that has a JWK Key Set
+# Change signature to RS256 and add a JKU to a URL that has a JWK Key Set (generate RSA key at runtime)
 .PHONY: jku
 jku: build
 	docker run  -ti \
 			   	-v $(PWD)/data:/workdir/data \
 			   	jwt:latest \
 				jku.py
+
+# Change signature to RS256 and add a JKU to a URL that has a JWK Key Set (using a fixed/static RSA key)
+.PHONY: jku-pem
+jku-pem: build
+	docker run  -ti \
+			   	-v $(PWD)/data:/workdir/data \
+			   	jwt:latest \
+				jku-pem.py

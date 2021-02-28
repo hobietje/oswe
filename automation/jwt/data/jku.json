@@ -1,1 +1,1 @@
-{"keys":[{"kty":"RSA","alg":"RS256","kid":"bilbo.baggins@hobbiton.example","use":"sig","n":"2P7MH5aUjDYkcZ9keL0MXZmRXGK7hPOFh892uqmXXiwcVxR9jbh0HF_wINwKF7whVFZy9fkljfL17ME4vySRzVLS5WC9zACp2RQ7S5bpXVChOzCRD8H4ePtG41cKqp-edT6xNt8PEoGN3T5FG0CFm5YmYQQqdlcp67dgcncZS9c","e":"AQAB"}]}
+{"keys":[{"kty":"RSA","alg":"RS256","kid":"pentesterlab","use":"sig","n":"p4CukLxoAWVxQYDKCrD8hhviIfTW_lTtTZgRq5zUBNuSGoJk-1jUu-H93KJ4ZVmT0ljIIUv9BG6TmkarJ1sNV1UrH8Lj13DADi61fbrLV847smussc3aCsryN5dEtKhDVYJro3YNbld2dpc_7NslDG1G-Ui_FO1cJsI1dJb1omM","e":"AQAB"}]}

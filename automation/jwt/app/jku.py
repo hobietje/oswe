@@ -1,3 +1,5 @@
+# JKU with a dynamically generated public/private key pair
+
 import jwt
 import json
 from codecs import encode, decode
@@ -45,7 +47,7 @@ print(n)
 # print(n)
 
 # create an appropriate JKU to publish
-jku_str = '{"keys":[{"kty":"RSA","alg":"RS256","kid":"bilbo.baggins@hobbiton.example","use":"sig","n":"' + n.decode() + '","e":"' + e.decode() + '"}]}'
+jku_str = '{"keys":[{"kty":"RSA","alg":"RS256","kid":"pentesterlab","use":"sig","n":"' + n.decode() + '","e":"' + e.decode() + '"}]}'
 jku_data = json.loads(jku_str)
 jku_b = jku_str.encode()
 print(jku_data)
