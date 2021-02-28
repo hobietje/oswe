@@ -1,1 +1,1 @@
-{"keys":[{"kty":"RSA","alg":"RS256","kid":"pentesterlab","use":"sig","n":"p4CukLxoAWVxQYDKCrD8hhviIfTW_lTtTZgRq5zUBNuSGoJk-1jUu-H93KJ4ZVmT0ljIIUv9BG6TmkarJ1sNV1UrH8Lj13DADi61fbrLV847smussc3aCsryN5dEtKhDVYJro3YNbld2dpc_7NslDG1G-Ui_FO1cJsI1dJb1omM","e":"AQAB"}]}
+{"keys":[{"kty":"RSA","alg":"RS256","kid":"pentesterlab","use":"sig","n":"w8cAyYGTh5uIyu2RHgJmb3NOv0jxzPbHCO269vPV5-uG3eKXd3qNLEUcAMZzOW4Sk47IIR9TsU1wctbFKf7VujARfMJqMv1bt9dmV3rTDNSd4-IwR_TOKzVF-8qiSmkmgPT-4RGbJESJPLFB2aTUCnx25gT0tsz3_tYbHe-H_4E","e":"AQAB"}]}

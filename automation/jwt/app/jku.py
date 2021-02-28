@@ -76,6 +76,8 @@ public_pem = public_key.public_bytes(
 )
 print(public_pem)
 print(public_pem.decode())
+with open('data/rsa.public', 'wb') as jku:
+    jku.write(public_pem)
 
 private_pem = private_key.private_bytes(
     encoding=primitives.serialization.Encoding.PEM,
@@ -84,6 +86,8 @@ private_pem = private_key.private_bytes(
 )
 print(private_pem)
 print(private_pem.decode())
+with open('data/rsa.private', 'wb') as jku:
+    jku.write(private_pem)
 
 # JWS Signing Input == ASCII(BASE64URL(UTF8(JWS Protected Header)) || '.' || BASE64URL(JWS Payload))
 sig_b = private_key.sign(
