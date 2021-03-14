@@ -1,5 +1,7 @@
 FROM python:3.9.1-buster AS python 
 
+RUN apt-get update -y && apt-get install -y libmpc-dev
+
 WORKDIR /workdir
 
 COPY /app/requirements.txt /workdir

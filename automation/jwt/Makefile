@@ -58,6 +58,14 @@ jwt-update-hs256: build
 			   	jwt:latest \
 				update-hs256.py
 
+# Change signature to HS256 and brute public key based on GCD from samples
+.PHONY: rsa-gcd
+rsa-gcd: build
+	docker run  -ti \
+			   	-v $(PWD)/data:/workdir/data \
+			   	jwt:latest \
+				rsa-gcd.py
+
 # Change signature to RS256 and add a JWK with the public 'n' and 'e' for RSA to the JWT header
 .PHONY: jwk-rs256-rsa
 jwk-rs256-rsa: build
