@@ -1,3 +1,21 @@
+# Code Comments
+
+Check for code comments that say something isn't implemented or working as intended.  E.g. anything mentioning:
+* todo
+* temporarily
+* disabled
+* skip
+* hack
+
+# Incorrect Use
+
+Look for functions that were built with security in mind, but aren't called correctly.  E.g.
+
+```
+func querydb(sql, params) { ... }
+querydb('SELECT * FROM users WHERE User=' + userId, {})
+```
+
 # Missing braces
 
 ```
