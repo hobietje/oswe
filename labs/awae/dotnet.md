@@ -29,5 +29,5 @@ Gadgets:
 E.g.:
 
 * DotNetNuke has a `FileSystemUtils.PullFile()` that could be useful, but XmlSerializer cannot invoke the method directly.
-* .NET has an `System.Windows.Data.ObjectDataProvider` class in the `PresentationFramework` assembly, which takes `MethodName` and `MethodParameters` properties.  It can therefore be used to call the DotNetNuke `FileSystemUtils.PutFile()` method (or other useful equivalents).
-* `ExpandedWrapper<A.B>` can be used when you have two object types from different libraries
+* .NET has an `System.Windows.Data.ObjectDataProvider` class in the `PresentationFramework` assembly, which takes `MethodName` and `MethodParameters` properties.  It can therefore be used to call the DotNetNuke `FileSystemUtils.PutFile()` method (or other useful equivalents).  Unfortunately this does not work because the default serializer expects both classes to live in the same assembly.
+* `System.Data.Services.Internal.ExpandedWrapper<A,B>` can be used to work around this, by using an instance of `ExpandedWrapper` to force references to both the `FileSystemUtils` and `ObjectDataProvider` to be loaded and resolved correctly.

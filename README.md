@@ -2,46 +2,64 @@
 
 This repository is to keep any scripts, notes, etc from my AWAE course and for the OSWE exam preparation in one place.  Some of these resources are likely (even more) useful to students of the OSCP as well.
 
-I did not include resources related to learning the basics of various programming languages or frameworks you may encounter in the AWAE, but rather those relating to specific security flaws, exploits, bypasses, misconfigurations, etc.
+_I did not include resources related to learning the basics of various programming languages or frameworks you may encounter in the AWAE, but rather those relating to specific security flaws, exploits, bypasses, misconfigurations, etc._
 
 # Preparation
 
-## AWAE course notes and videos
+## Course materials
 
-[TODO]
+Read, read, then read some more:
 
-## Familiarize with debuggers and other toools
+* AWAE course notes [TODO]
+* [Code Audits 1 - Fall 2011](https://vimeo.com/30001189) and [Code Audits 2 - Fall 2011](https://vimeo.com/29702192)
 
-[TODO]
+  Somewhat dated and focussed on C/C++, but still found it to be useful. See [my notes](guidelines/code_review.md).
+* [Auditing Source](https://trailofbits.github.io/ctf/vulnerabilities/source.html) [TODO]
+* Bug bountry reports [TODO]
 
-## Practice on labs
+## Practice
 
-__AWAE__
+AWEA is hands-on, so spend tons of time doing actual code reviews.
 
-[TODO]
+### Labs
 
-__[PentesterLab PRO](https://pentesterlab.com/referral/Li4afWlMWsD9Sg)__
+* [AWAE](https://www.offensive-security.com/awae-oswe/)
+  
+  [TODO]
+  
+* [PortSwigger Web Academy](https://portswigger.net/web-security)
+  
+  A beautifully put together set of course materials and related labs for web related vulnerabilities.  You should finish all of these :)
 
-Loved it.  I preferred to work on each topic area and ignored the Badges, e.g. doing every JWT lab available in sequence.  I felt this helped me to continue diving deeper into one topic area without frequent context switching.  These are probably most appropriate for the AWAE/OSWE:
+*  [PentesterLab PRO](https://pentesterlab.com/referral/Li4afWlMWsD9Sg)
+    
+    Love.  I preferred to work on each topic area and ignored the Badges, e.g. doing every JWT lab available in sequence.  I felt this helped me to continue diving deeper into one topic area without frequent context switching.  These are probably most appropriate for the AWAE/OSWE:
+    
+    * The [CGI](labs/pentesterlab.com/cgi.md) labs for Shellshock and similar issues
+    * All [JWT](labs/pentesterlab.com/jwt.md) labs for auth bypasses
 
-* All [JWT](labs/pentesterlab.com/jwt.md) labs
-* The [CGI](labs/pentesterlab.com/cgi.md) labs for Shellshock and similar issues
+### Known vulnerable apps
 
-__[PortSwigger Web Academy](https://portswigger.net/web-security)__
+Perform code reviews (not black box pen testing!) on:
 
-A beautifully put together set of course materials and related labs for web related vulnerabilities.  You should finish all of these :)
+* OWASP Juice Box [TODO]
+* Damn Vulnerable Web Application [TODO]
 
-## Practice on real-life Open Source
+### Open source code
 
 Plenty of OSS out there, but I spent some time trying to find known vulnerabilities in old versions of these:
 
 * [ImpressCMS](https://github.com/ImpressCMS/impresscms)
 
-## Review bug bountry reports
+## Tooling
 
-[TODO]
+Debuggers:
 
-## Automation for discovery
+* TODO
+
+Disassemblers:
+
+* TODO
 
 Code review tools:
 
@@ -60,11 +78,11 @@ Other:
 
 * [john](automation/john/README.md) to brute force potential password hashes discovered.
 
-# Resources & references
+# Other resources & references
 
 Where possible, I reference specific write-ups, presentations, etc in my vulnerability or language specific notes.
 
-These are some more general reference sets that I have found useful to define my own learning roadmap:
+These are some additional reference sets that I have found useful to define my own learning roadmap:
 
 1. [deletehead/awae_oswe_prep](https://github.com/deletehead/awae_oswe_prep)
 
