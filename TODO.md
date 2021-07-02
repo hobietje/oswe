@@ -1,5 +1,4 @@
-
-## Course Notes & Videos
+# TODO
 
 ## Familiarize with tools
 
@@ -8,33 +7,7 @@ dnSpy
 regex101.com
 JD-GUI
 
-## Practice Labs
-
-* AWAE
-  * Atmail Mail Server Appliance: from XSS to RCE
-  * ATutor Auth Bypass and RCE
-  * ATutor LMS Type Juggling Vuln
-  * ManageEngine Applications Manager AMUserResourcesSyncServlet SQL Injection RCE
-  * Bassmaster NodeJS Arbitrary JavaScript Injection Vulnerability
-  * DotNetNuke Deserialization RCE
-  * ERPNext Authentication Bypass and Server Side Template Injection
-  * openCRX Authentication Bypass and Remote Code Execution
-  * openITCOCKPITXSSandOSCommandInjection
-* HackTheBox and CTFs
-  * ?
-* SecureCodeWarrior
-  * ?
-* PortSwigger Web Academy
-
-## Practice on real-life Open Source
-
-? 
-
-## Create tooling
-
-?
-
-# References
+## References
 
 __AWAE specific guides__
 

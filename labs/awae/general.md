@@ -1,6 +1,12 @@
 
 Press `Ctrl+H` to show/hide hidden files in the file browser!
 
+# Show filesystem hierarchy
+
+```bash
+tree -L 3
+```
+
 # Find files
 
 Recursive, with file extension:
@@ -172,3 +178,11 @@ nc -lvp 4444
 _When serving web shells from our own server, make sure to set permissions so they aren't executable on our server, and thus that we don't web-shell ourselves!  E.g. `chmod 644`._
 
 [cmdasp.aspx](https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmdasp.aspx)
+
+## Terminal
+
+Use OPTION+SHIFT+S to rename our terminal tabs.
+
+## Tokens/Markers
+
+"Using values like “offsec_scope” allows us to have a unique token that we are in control of. This allows us to grep through logs and query in databases if needed. If a value of “test” was used, we might have a lot of false positives if we need to grep for it."

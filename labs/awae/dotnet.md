@@ -10,6 +10,10 @@ Note that IIS workers need to be reloaded for changed to be picked up, as assemb
 
 We can then attach the `dnSpy` debugger to `w3wp.exe` and pause execution from the Debug menu, view the modules loaded, and add them to the Assembly Explorer to browse the code and set breakpoints.
 
+## Remote Debugging
+
+
+
 ## Code Smells
 
 `Server.Transfer(...)` can allow unexpected side-effects due to the non-linear execution flow of requests, e.g. authn/z can potentially be bypassed, or input filters.
